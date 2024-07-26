@@ -368,8 +368,8 @@ h3.my-profession {
 }
 
 .home .home-img {
-  flex: 0 0 40%;
-  max-width: 40%;
+  width: 410px; /* Taille fixe pour le cercle rouge */
+  height: 410px; /* Taille fixe pour le cercle rouge */
   text-align: center;
   position: relative;
   border-radius: 50%;
@@ -388,6 +388,7 @@ h3.my-profession {
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
   animation-delay: 1.1s, 2.1s;
 }
+
 
 
 /* Home End */
