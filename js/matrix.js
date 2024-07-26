@@ -20,12 +20,12 @@ const characters = [
   "7",
   "8",
   "9",
+  "Y",
   "A",
-  "B",
   "C",
-  "D",
+  "I",
+  "N",
   "E",
-  "F",
 ];
 
 // Create an array of columns
@@ -45,7 +45,7 @@ function updateMatrix() {
   ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
   // Set the text color and font
-  ctx.fillStyle = "red";
+  ctx.fillStyle = "purple";
   ctx.font = "12px timesnewroman";
 
   // Loop through each column
