@@ -366,11 +366,10 @@
 
 
 
-            <form action="https://formsubmit.co/yacinemekideche@gmail.com" method="POST" class="contact-form padd-15">
-              <input type="hidden" name="_next" value="https://votre-site.com/merci.html">
+            <form id="contact-form" class="contact-form padd-15">
+              <input type="hidden" name="_next" value="https://yacine-mekideche.github.io/merci.html">
               <input type="hidden" name="_subject" value="Nouveau message de votre portfolio">
               <input type="hidden" name="_captcha" value="false">
-              <!-- autres champs du formulaire -->
               <div class="row">
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
@@ -405,6 +404,8 @@
                 </div>
               </div>
             </form>
+            <p id="form-response" style="display: none;">Merci pour votre message ! Nous vous répondrons dès que possible.</p>
+            
             
 
             
@@ -421,6 +422,46 @@
   <!-- Custom JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
+
+
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      const formData = new FormData(this);
+      const action = 'https://formsubmit.co/yacinemekideche@gmail.com';
+  
+      fetch(action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          document.getElementById('form-response').style.display = 'block';
+          document.getElementById('contact-form').reset();
+        } else {
+          alert('Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.');
+        }
+      }).catch(error => {
+        alert('Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.');
+      });
+    });
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
