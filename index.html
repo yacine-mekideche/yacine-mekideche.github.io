@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +14,6 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/sairedanon.png" />
 </head>
-
 <body class="dark">
   <canvas id="matrixCanvas"></canvas>
   <!-- Matrix -->
@@ -44,7 +41,6 @@
         <li>
           <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
         </li>
-
       </ul>
     </div>
     <!-- Aside End -->
@@ -227,6 +223,19 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
                       </p>
                     </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2023 - 2026
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -240,52 +249,52 @@
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2023 - 2026
+                        <i class="fa fa-calendar"></i> 2021
                       </h3>
                       <h4 class="timeline-title">
                         Master in Information Technology
                       </h4>
                       <p class="timeline-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
                       </p>
                     </div>
                     <!-- Timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2023 - 2026
+                        <i class="fa fa-calendar"></i> 2021
                       </h3>
                       <h4 class="timeline-title">
                         Master in Information Technology
                       </h4>
                       <p class="timeline-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
                       </p>
                     </div>
                     <!-- Timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2023 - 2026
+                        <i class="fa fa-calendar"></i> 2021
                       </h3>
                       <h4 class="timeline-title">
                         Master in Information Technology
                       </h4>
                       <p class="timeline-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
                       </p>
                     </div>
                     <!-- Timeline item -->
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2023 - 2026
+                        <i class="fa fa-calendar"></i> 2021
                       </h3>
                       <h4 class="timeline-title">
                         Master in Information Technology
                       </h4>
                       <p class="timeline-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
                       </p>
                     </div>
                   </div>
@@ -386,43 +395,41 @@
             Je le lirais attentivement
           </h4>
           <!-- Contact form -->
-          <div class="row">
-            <div class="contact-form padd-15">
-              <div class="row">
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nom" />
-                  </div>
-                </div>
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="email" class="form-control" placeholder="E-mail" />
-                  </div>
+          <form action="contact-form-handler.php" method="post" class="contact-form padd-15">
+            <div class="row">
+              <div class="form-item col-6 padd-15">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" placeholder="Nom" required />
                 </div>
               </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Objet" />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <textarea class="form-control" placeholder="Message"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <button type="submit" class="btn">Envoyer</button>
-                  </div>
+              <div class="form-item col-6 padd-15">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" placeholder="E-mail" required />
                 </div>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" placeholder="Objet" required />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <div class="form-group">
+                  <button type="submit" class="btn">Envoyer</button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
       <!-- Contact Section End -->
@@ -435,5 +442,4 @@
     referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
 </body>
-
 </html>
