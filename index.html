@@ -14,21 +14,6 @@
   <link rel="stylesheet" href="css/style-switcher.css" />
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/sairedanon.png" />
-  <style>
-    .thank-you-section {
-      display: none;
-      text-align: center;
-      padding: 50px;
-      background-color: #222;
-      color: white;
-      border-radius: 10px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-    }
-  </style>
 </head>
 
 <body class="dark">
@@ -74,7 +59,7 @@
               <h3 class="my-profession">
                 Je suis <span class="typing"></span>
               </h3>
-              <p>Salut, ceci est un portfolio bien sympathique !!!! STOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOP </p>
+              <p>Bienvenu sur mon portfolio !  </p>
               <a href="docs/CV_MEKIDECHE_Yacine_FR.pdf" class="btn" download>Téléchargez mon CV</a>
             </div>
             <div class="home-img padd-15">
@@ -231,54 +216,6 @@
                     <div class="timeline-item">
                       <div class="circle-dot"></div>
                       <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2023 - 2026
-                      </h3>
-                      <h4 class="timeline-title">
-                        Master in Information Technology
-                      </h4>
-                      <p class="timeline-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="experience padd-15">
-              <h3 class="title">EXPÉRIENCES PROFESSIONNELLES</h3>
-              <div class="row">
-                <div class="timeline-box padd-15">
-                  <div class="timeline shadow-dark">
-                    <!-- Timeline item -->
-                    <div class="timeline-item">
-                      <div class="circle-dot"></div>
-                      <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2023 - 2026
-                      </h3>
-                      <h4 class="timeline-title">
-                        Master in Information Technology
-                      </h4>
-                      <p class="timeline-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                      </p>
-                    </div>
-                    <!-- Timeline item -->
-                    <div class="timeline-item">
-                      <div class="circle-dot"></div>
-                      <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2023 - 2026
-                      </h3>
-                      <h4 class="timeline-title">
-                        Master in Information Technology
-                      </h4>
-                      <p class="timeline-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                      </p>
-                    </div>
-                    <!-- Timeline item -->
-                    <div class="timeline-item">
-                      <div class="circle-dot"></div>
-                      <h3 class="timeline-date">
                         <i class="fa fa-calendar"></i> 2021
                       </h3>
                       <h4 class="timeline-title">
@@ -402,12 +339,7 @@
                 </div>
               </div>
             </form>
-            <section id="merci" class="thank-you-section" style="display: none;">
-              <div class="container">
-                <h2>Merci pour votre message !</h2>
-                <p>Nous vous répondrons dès que possible.</p>
-              </div>
-            </section>
+            <p id="form-response" style="display: none;">Merci pour votre message ! Nous vous répondrons dès que possible.</p>
           </div>
         </div>
       </section>
@@ -422,10 +354,10 @@
   <script>
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-  
+
       const formData = new FormData(this);
       const action = 'https://formsubmit.co/yacinemekideche@gmail.com';
-  
+
       fetch(action, {
         method: 'POST',
         body: formData,
@@ -434,8 +366,8 @@
         }
       }).then(response => {
         if (response.ok) {
-          document.getElementById('merci').style.display = 'block';
-          document.getElementById('contact-form').style.display = 'none';
+          document.getElementById('form-response').style.display = 'block';
+          document.getElementById('contact-form').reset();
         } else {
           alert('Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.');
         }
