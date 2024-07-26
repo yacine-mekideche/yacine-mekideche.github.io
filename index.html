@@ -2,575 +2,448 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yacine Mekideche | Portfolio</title>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/skins/color-red.css" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="css/style-switcher.css" />
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/sairedanon.png" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yacine Mekideche | Portfolio</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/skins/color-red.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style-switcher.css" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/sairedanon.png" />
+  <style>
+    .thank-you-section {
+      display: none;
+      text-align: center;
+      padding: 50px;
+      background-color: #222;
+      color: white;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+    }
+  </style>
 </head>
 
 <body class="dark">
-    <canvas id="matrixCanvas"></canvas>
-    <!-- Matrix -->
-    <script src="/js/matrix.js"></script>
-    <!-- Main Container Start -->
-    <div class="main-container">
-        <!-- Aside Start -->
-        <div class="aside">
-            <div class="logo">
-                <a href="index.html"><span>Y</span>acine</a>
-            </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li>
-                    <a href="#home" class="active"><i class="fa fa-home"></i> Accueil</a>
-                </li>
-                <li>
-                    <a href="#about"><i class="fa fa-user"></i> À propos</a>
-                </li>
-                <li>
-                    <a href="#education"><i class="fa fa-book"></i> Parcours & Expériences</a>
-                </li>
-                <li>
-                    <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Aside End -->
-        <!-- Main Content Start -->
-        <div class="main-content">
-            <!-- Home Section Start -->
-            <section class="home active section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">
-                                Enchanté, moi c'est <span class="name">Yacine Mekideche</span>
-                            </h3>
-                            <h3 class="my-profession">
-                                Je suis <span class="typing"></span>
-                            </h3>
-                            <p>Salut, ceci est un portfolio bien sympathique !!!! STOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOP </p>
-                            <a href="docs/CV_MEKIDECHE_Yacine_FR.pdf" class="btn" download>Téléchargez mon CV</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="images/sairedanon.png" alt="hero" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Home Section End -->
-
-            <!-- About Section Start -->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>À propos de moi</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>Moi c'est Yacine et je suis<span> étudiant à l'ESGI&nbsp;&nbsp;</span></h3>
-                                    <p>
-                                        Là je dois mettre une phrase d'introduction pour me présenter rapidement, qui je suis, ce que je fais etc.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Birthday : 18/10/2003<span></span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Age : 20<span></span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Website : <span>www.domain.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>info@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Degree : <span>Cyber Security</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone : <span>+91 1234567890</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Mumbai</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#education" class="btn hire-me">En savoir plus</a>
-                                            <a href="#contact" class="btn hire-me">Une question ?</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skills-item padd-15">
-                                            <h5>Red Teaming</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 95%"></div>
-                                                <div class="skill-percent">95%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skills-item padd-15">
-                                            <h5>Web Applications</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 85%"></div>
-                                                <div class="skill-percent">85%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skills-item padd-15">
-                                            <h5>Mobile Pentesting</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 85%"></div>
-                                                <div class="skill-percent">85%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skills-item padd-15">
-                                            <h5>DDoS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 97%"></div>
-                                                <div class="skill-percent">97%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About Section End -->
-
-            <!-- Educations & Experience Section Start -->
-            <section class="education section" id="education">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Parcours & Expériences</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="education padd-15">
-                            <h3 class="title">PARCOURS ACADÉMIQUE</h3>
-                            <div class="row">
-                                <div class="timeline-box padd-15">
-                                    <div class="timeline shadow-dark">
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - 2026
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - 2026
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - 2026
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - 2026
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2021
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2021
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2021
-                                            </h4>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="experience padd-15">
-                            <h3 class="title">EXPÉRIENCES PROFESSIONNELLES</h3>
-                            <div class="row">
-                                <div class="timeline-box padd-15">
-                                    <div class="timeline shadow-dark">
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - 2026
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - 2026
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - 2026
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2023 - 2026
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2021
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2021
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                            </p>
-                                        </div>
-                                        <!-- Timeline item -->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                            <h3 class="timeline-date">
-                                                <i class="fa fa-calendar"></i> 2021
-                                            </h3>
-                                            <h4 class="timeline-title">
-                                                Master in Information Technology
-                                            </h4>
-                                            <p class="timeline-text">
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="experience padd-15"></div>
-                        <h3 class="title">CERTIFICATIONS</h3>
-                        <div class="row">
-                            <div class="timeline-box padd-15">
-                                <div class="timeline shadow-dark">
-                                    <!-- Timeline item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2021
-                                        </h3>
-                                        <h4 class="timeline-title">
-                                            Master in Information Technology
-                                        </h4>
-                                        <p class="timeline-text">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                        </p>
-                                    </div>
-                                    <!-- Timeline item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2021
-                                        </h3>
-                                        <h4 class="timeline-title">
-                                            Master in Information Technology
-                                        </h4>
-                                        <p class="timeline-text">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                        </p>
-                                    </div>
-                                    <!-- Timeline item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2021
-                                        </h3>
-                                        <h4 class="timeline-title">
-                                            Master in Information Technology
-                                        </h4>
-                                        <p class="timeline-text">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                        </p>
-                                    </div>
-                                    <!-- Timeline item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2021
-                                        </h3>
-                                        <h4 class="timeline-title">
-                                            Master in Information Technology
-                                        </h4>
-                                        <p class="timeline-text">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                        </p>
-                                    </div>
-                                    <!-- Timeline item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-date">
-                                            <i class="fa fa-calendar"></i> 2021
-                                        </h3>
-                                        <h4 class="timeline-title">
-                                            Master in Information Technology
-                                        </h4>
-                                        <p class="timeline-text">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-            </section>
-            <!-- Educations & Experience Section End -->
-
-            <!-- Contact Section Start -->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Me contacter</h2>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">Avez-vous une question ?</h3>
-                    <h4 class="contact-sub-title padd-15">N'hésitez-pas !</h4>
-                    <div class="row">
-                        <!-- Contact info item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Téléphone</h4>
-                            <p>+33 6 09 08 61 62</p>
-                        </div>
-                        <!-- Contact info item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                            <h4>Localisation</h4>
-                            <p>FRANCE, Paris 75011</p>
-                        </div>
-                        <!-- Contact info item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>E-mail</h4>
-                            <p>yacinemekideche@gmail.com</p>
-                        </div>
-                        <!-- Contact info item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                            <h4>LinkedIn</h4>
-                            <p><a href="#">@yacine-mekideche/</a></p>
-                        </div>
-                    </div>
-                    <h3 class="contact-title padd-15">M'ENVOYER UN E-MAIL</h3>
-                    <h4 class="contact-sub-title padd-15">
-                        Je le lirais attentivement
-                    </h4>
-                    <!-- Contact form -->
-                    <div class="row">
-                        <form id="contact-form" class="contact-form padd-15">
-                            <input type="hidden" name="_next" value="https://yacine-mekideche.github.io/merci.html">
-                            <input type="hidden" name="_subject" value="Nouveau message de votre portfolio">
-                            <input type="hidden" name="_captcha" value="false">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="name" placeholder="Nom"
-                                            required />
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" placeholder="E-mail"
-                                            required />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="subject" placeholder="Objet"
-                                            required />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" placeholder="Message"
-                                            required></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn">Envoyer</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <p id="form-response" style="display: none;">Merci pour votre message ! Nous vous
-                            répondrons dès que possible.</p>
-                    </div>
-                </div>
-            </section>
-            <!-- Contact Section End -->
-        </div>
-        <!-- Main Content End -->
+  <canvas id="matrixCanvas"></canvas>
+  <!-- Matrix -->
+  <script src="/js/matrix.js"></script>
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Aside Start -->
+    <div class="aside">
+      <div class="logo">
+        <a href="index.html"><span>Y</span>acine</a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li>
+          <a href="#home" class="active"><i class="fa fa-home"></i> Accueil</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa fa-user"></i> À propos</a>
+        </li>
+        <li>
+          <a href="#education"><i class="fa fa-book"></i> Parcours & Expériences</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa fa-comments"></i> Contact</a>
+        </li>
+      </ul>
     </div>
-    <!-- Main Container End -->
-    <!-- Custom JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-        referrerpolicy="no-referrer"></script>
-    <script src="js/script.js"></script>
+    <!-- Aside End -->
+    <!-- Main Content Start -->
+    <div class="main-content">
+      <!-- Home Section Start -->
+      <section class="home active section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello"> 
+                Enchanté, moi c'est <span class="name">Yacine Mekideche</span>
+              </h3>
+              <h3 class="my-profession">
+                Je suis <span class="typing"></span>
+              </h3>
+              <p>Salut, ceci est un portfolio bien sympathique !!!! STOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOP </p>
+              <a href="docs/CV_MEKIDECHE_Yacine_FR.pdf" class="btn" download>Téléchargez mon CV</a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="images/sairedanon.png" alt="hero" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
 
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault();
+      <!-- About Section Start -->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>À propos de moi</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>Moi c'est Yacine et je suis<span> étudiant à l'ESGI&nbsp;&nbsp;</span></h3>
+                  <p>
+                    Là je dois mettre une phrase d'introduction pour me présenter rapidement, qui je suis, ce que je fais etc. 
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Birthday : 18/10/2003<span></span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Age : 20<span></span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Website : <span>www.domain.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Email : <span>info@gmail.com</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Degree : <span>Cyber Security</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Phone : <span>+91 1234567890</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>City : <span>Mumbai</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="#education" class="btn hire-me">En savoir plus</a>
+                      <a href="#contact" class="btn hire-me">Une question ?</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skills-item padd-15">
+                      <h5>Red Teaming</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 95%"></div>
+                        <div class="skill-percent">95%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Web Applications</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 85%"></div>
+                        <div class="skill-percent">85%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>Mobile Pentesting</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 85%"></div>
+                        <div class="skill-percent">85%</div>
+                      </div>
+                    </div>
+                    <div class="skills-item padd-15">
+                      <h5>DDoS</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 97%"></div>
+                        <div class="skill-percent">97%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
 
-            const formData = new FormData(this);
-            const action = 'https://formsubmit.co/yacinemekideche@gmail.com';
+      <!-- Educations & Experience Section Start -->
+      <section class="education section" id="education">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Parcours & Expériences</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="education padd-15">
+              <h3 class="title">PARCOURS ACADÉMIQUE</h3>
+              <div class="row">
+                <div class="timeline-box padd-15">
+                  <div class="timeline shadow-dark">
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2023 - 2026
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                      </p>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2023 - 2026
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                      </p>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2023 - 2026
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                      </p>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2023 - 2026
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="experience padd-15">
+              <h3 class="title">EXPÉRIENCES PROFESSIONNELLES</h3>
+              <div class="row">
+                <div class="timeline-box padd-15">
+                  <div class="timeline shadow-dark">
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2023 - 2026
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                      </p>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2023 - 2026
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ab vitae voluptatum, nobis earum magni quaerat quasi laborum omnis repellendus nostrum? Eveniet odio sapiente sit dolor temporibus repudiandae nostrum cupiditate.
+                      </p>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2021
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
+                      </p>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2021
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
+                      </p>
+                    </div>
+                    <!-- Timeline item -->
+                    <div class="timeline-item">
+                      <div class="circle-dot"></div>
+                      <h3 class="timeline-date">
+                        <i class="fa fa-calendar"></i> 2021
+                      </h3>
+                      <h4 class="timeline-title">
+                        Master in Information Technology
+                      </h4>
+                      <p class="timeline-text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint nesciunt consectetur repellendus sunt dolorem perferendis, hic tenetur necessitatibus voluptas cupiditate laudantium laboriosam, consequuntur unde facere. Beatae molestias dolorem at expedita.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Educations & Experience Section End -->
 
-            fetch(action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    document.getElementById('form-response').style.display = 'block';
-                    document.getElementById('contact-form').reset();
-                    window.location.href = "https://yacine-mekideche.github.io/merci.html";
-                } else {
-                    alert('Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.');
-                }
-            }).catch(error => {
-                alert('Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.');
-            });
-        });
-    </script>
+      <!-- Contact Section Start -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Me contacter</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Avez-vous une question ?</h3>
+          <h4 class="contact-sub-title padd-15">N'hésitez-pas !</h4>
+          <div class="row">
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Téléphone</h4>
+              <p>+33 6 09 08 61 62</p>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>Localisation</h4>
+              <p>FRANCE, Paris 75011</p>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>E-mail</h4>
+              <p>yacinemekideche@gmail.com</p>
+            </div>
+            <!-- Contact info item-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>LinkedIn</h4>
+              <p><a href="#">@yacine-mekideche/</a></p>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">M'ENVOYER UN E-MAIL</h3>
+          <h4 class="contact-sub-title padd-15">
+            Je le lirais attentivement
+          </h4>
+          <!-- Contact form -->
+          <div class="row">
+            <form id="contact-form" class="contact-form padd-15">
+              <input type="hidden" name="_next" value="https://yacine-mekideche.github.io/#merci">
+              <input type="hidden" name="_subject" value="Nouveau message de votre portfolio">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Nom" required />
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="E-mail" required />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" placeholder="Objet" required />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <button type="submit" class="btn">Envoyer</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <section id="merci" class="thank-you-section" style="display: none;">
+              <div class="container">
+                <h2>Merci pour votre message !</h2>
+                <p>Nous vous répondrons dès que possible.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section End -->
+    </div>
+    <!-- Main Content End -->
+  </div>
+  <!-- Main Container End -->
+  <!-- Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      const formData = new FormData(this);
+      const action = 'https://formsubmit.co/yacinemekideche@gmail.com';
+  
+      fetch(action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          document.getElementById('merci').style.display = 'block';
+          document.getElementById('contact-form').style.display = 'none';
+        } else {
+          alert('Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.');
+        }
+      }).catch(error => {
+        alert('Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.');
+      });
+    });
+  </script>
 </body>
 
 </html>
